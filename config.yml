@@ -1,0 +1,8 @@
+paths:
+    webdriver:
+      geckodriver: C:\Work\learn\python\resources\geckodriver.exe
+      chromedriver: C:\Work\learn\python\resources\chromedriver.exe
+    screenshots: C:\Work\learn\python\screenshots
+    downloads: C:\Work\learn\python\downloads
+headless: --headless
+browser: chrome
