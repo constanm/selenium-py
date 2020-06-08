@@ -4,6 +4,7 @@ import pytest
 
 from patterns.pages.home_page import HomePage
 
+
 # Run from command line
 # python -m pytest patterns/tests/test_login.py --browser chrome
 
@@ -21,7 +22,6 @@ class LoginTest(unittest.TestCase):
         # use credentials from sign up test
         page = login_page.enter_email("some_email@email.com").enter_password("correct_password").click_sign_in_button()
         assert page.get_title() == "My Store"
-
 
     def test_invalid_login(self):
         self.home_page = HomePage(self.driver)

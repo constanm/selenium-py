@@ -115,7 +115,7 @@ class WebdriverTests(unittest.TestCase):
         print("New window handle " + last_tab)
         time.sleep(1)
 
-        # close the last
+        # close the last tab or window
         driver.close()
         time.sleep(1)
 

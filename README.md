@@ -19,10 +19,15 @@ Install _pytest_ dependency
 <ul>
     <li>Firefox 76.0.1 (64-bit)</li>
     <li>Chrome 81.0.4044.138 (Official Build) (64-bit)</li>
+</ul>
+
+### IDE
+<ul>
     <li>Pycharm 2020.1.1 CE</li>
 </ul>
 
 ### Webdrivers
+Download and extract the drivers locally then update the _config.yml_ paths.
 <ul>
     <li><a href="https://github.com/mozilla/geckodriver/releases/tag/v0.26.0">geckodriver</a></li>
     <li><a href="https://chromedriver.storage.googleapis.com/index.html?path=81.0.4044.138/">chromedriver</a></li>

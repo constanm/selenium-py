@@ -13,6 +13,10 @@ with webdriver.Firefox(executable_path=geckodriver_path()) as driver:
     driver.get("http://google.com")
     q = driver.find_element(By.NAME, "q")
 
+    # optionally switch to active element
+    title = driver.switch_to.active_element.get_attribute("title")
+    print("q's title is '%s'" % title)
+
     print("q's tag name is '%s', text is '%s'" % (q.tag_name, q.text))
     print("q's class is '%s'" % q.get_attribute("class"))
     print("q's type is '%s'" % q.get_property("type"))
